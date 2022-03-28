@@ -70,3 +70,32 @@
 	--删除表
 		--drop table 表名;
 
+	--查看表创建语句
+		--show create table 表名
+
+
+
+-- 增删改查(crud)
+	--全列插入
+		--insert into 表名 values（）
+		--主健字段 可以用0 null default 来占位
+
+	--部分插入
+	--枚举 对应 1 2 3 4 ...
+	--insert into students (name, gender) values ("xiaoqiao", 2)
+
+	--改
+	--update 表名 set 列1=值1,列2=值2 where 条件；
+
+	--删除
+		--物理删除
+		--delete from 表名 where 条件
+
+		--逻辑删除
+		--用一个字段表示 这条信息以及不能再使用了
+		--alter table students add is_delete bit default 0;
+		--update students set is_delete= 1 where id = 6;
+
+	--查询
+		--select * from 表名；
+		
